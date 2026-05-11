@@ -8,3 +8,4 @@ services:
     volumes:
       - ./data:/app/data
     command: python app/bot.py
+    network_mode: "container:xray-vpn"  # ← через VPN
